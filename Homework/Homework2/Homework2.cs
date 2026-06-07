@@ -119,7 +119,6 @@ void AnalyzeText(string text)
 
 // Task 4
 
-string input = Console.ReadLine();
 string reversedResult = ReverseText(input);
 
 string ReverseText(string text)
@@ -135,6 +134,7 @@ string ReverseText(string text)
 Console.WriteLine();
 
 Console.Write("შეიყვანეთ სიტყვა: ");
+string input = Console.ReadLine();
 
 Console.WriteLine("შებრუნებული ტექსტი: " + reversedResult);
 
