@@ -14,9 +14,8 @@ for (int i = 0; i < amount; i++)
 
 Console.WriteLine();
 
-
 int sum = 0;
-int average = 0;
+double average = 0;
 int max = numbers[0];
 int min = numbers[0];
 
@@ -28,8 +27,6 @@ for (int i = 0; i < amount; i++)
 
     sum += numbers[i];
 
-    average += sum / amount;
-
     if (numbers[i] > max)
     {
         max = numbers[i];
@@ -39,6 +36,11 @@ for (int i = 0; i < amount; i++)
     {
         min = numbers[i];
     }
+}
+
+if (amount > 0)
+{
+    average = (double)sum / amount;
 }
 
 Console.WriteLine();
