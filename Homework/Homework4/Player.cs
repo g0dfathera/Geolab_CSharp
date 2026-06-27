@@ -35,6 +35,7 @@
         {
             _energy += amount;
             if (_energy > 100) _energy = 100;
+            if ( _energy <= 0)  _energy = 0; 
         }
 
 
@@ -50,6 +51,7 @@
             {
                 Console.WriteLine("You are out of energy! Losing 5 health per move.");
                 UpdateHealth(-5);
+                _energy = 0;
             }
         }
 
